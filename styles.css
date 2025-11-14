@@ -1,0 +1,56 @@
+body {
+  background: #f4f4f4;
+}
+.badge {
+   padding:20px;
+    
+    background-color: white;
+    text-align: center;
+   width:260px;
+   margin:40px auto;
+    border-radius: 12px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.3);
+   
+}
+.avatar {
+    height:100px;
+    width:100px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+
+}
+.avatar:hover {
+    transform:translateY(-5px);
+}
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+p {
+    font-style: italic;
+}
+.role {
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+.glow {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%  {
+        box-shadow:0 0 0 0 rgba(0, 123, 255, 0.6);
+
+    }
+    70% {
+        box-shadow: 0 0 15px 8px rgba(0, 123, 255, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+}
